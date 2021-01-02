@@ -2,7 +2,7 @@
 
 This repository hosts source code for paper "A novel deep learning approach for intelligent fault diagnosis applications based on time-frequency images"
 
-Requirements:
+<b>Requirements:</b>
 
 Python 3.6.9
 
