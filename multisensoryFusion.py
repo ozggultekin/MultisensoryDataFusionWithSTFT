@@ -105,8 +105,7 @@ def resnet18(input_shape, num_classes, num_signals):
     model = Model(inputs, outputs)
     return model
 
-# Step Based Learning Rate Scheduling: lr is 0.001 for first (0.4*epochs) epochs
-# then multiplied by 0.1 at each (0.2*epochs) steps
+# Step Based Learning Rate Scheduling: lr is 0.001 for first (0.4*epochs) epochs and then multiplied by 0.1 at each (0.2*epochs) steps
 def step_based_lr_schedule(epoch):
     lr = 1e-2
     d = 1e-1
