@@ -18,8 +18,8 @@ def stft_samples(index, filelist):
         Samples = np.empty(shape = (sample_size*len(filelist), crop_h, crop_w), dtype = np.float64)
         for i in range(len(filelist)):
             df = loadmat(DIR + filelist[i])[filelist[i][:-4]]['Y'][0][0][0][index[k]]['Data']
-            my_list = map(lambda x: x[0], df.T)
-            df = pd.Series(my_list)
+            data_list = map(lambda x: x[0], df.T)
+            df = pd.Series(data_list)
 
             for j in range(sample_size):
                 f, t, Zxx = signal.stft(df[j*sample_length:(j+1)*sample_length],
