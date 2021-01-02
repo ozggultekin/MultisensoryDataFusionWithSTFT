@@ -4,7 +4,7 @@ import os
 dataset = "A"
 
 # PU Bearing Dataset Signal Index: [1] Current, [6] Vibration, [1, 6] Both
-data_index = [6]
+data_index = [6, 1]
 
 # Parameters for Input
 size_h = 65
@@ -16,7 +16,7 @@ sample_length = 512
 
 # Parameters for Model Training
 batch_size = 32
-epochs = 2
+epochs = 200
 
 # Parameters for STFT
 fs = 128
