@@ -1,6 +1,6 @@
 # MultisensoryDataFusionWithSTFT
 
-This repository hosts source code for paper "A novel deep learning approach for intelligent fault diagnosis applications based on time-frequency images"
+This repository hosts source code for paper "A novel deep learning approach for intelligent fault diagnosis applications based on time-frequency images". The dataset used in this paper can be downloaded via https://mb.uni-paderborn.de/kat/forschung/datacenter/bearing-datacenter
 
 <b>Requirements:</b>
 
