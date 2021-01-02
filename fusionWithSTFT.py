@@ -30,7 +30,7 @@ def stft_samples(index, filelist):
             
             if k == 0:
                 label = np.concatenate((label, np.ones(sample_size, dtype = np.uint8) * i))
-                
+              
         Samples = Samples.reshape((Samples.shape[0], crop_h, crop_w, 1))
         Comb.insert(k, Samples)
 
