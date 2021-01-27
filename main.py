@@ -5,7 +5,7 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.callbacks import LearningRateScheduler
 from tensorflow.keras.callbacks import ReduceLROnPlateau
 from load_data import *
-from multisensoryFusion import *
+from fusionWithSTFT import *
 from utils import *
     
 def main():
@@ -34,7 +34,7 @@ def main():
     y_test = Comb[-1][test]
     
     # Creating Model by Regarding Number of Measured Signals
-    model = resnet18(input_shape = X_train[0].shape[1:], num_classes = len(filelist), num_signals = len(index))
+    model = resnet18(input_shape = X_train[0].shape[1:], num_classes = len(filelist), num_signals = len(data_index))
     
     # Optimizing with Adam optimizer based of Step Based Learning Rate Scheduling
     model.compile(loss='sparse_categorical_crossentropy', optimizer = Adam(lr = step_based_lr_schedule(0)), metrics = ['accuracy'])
