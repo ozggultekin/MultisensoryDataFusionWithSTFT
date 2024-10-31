@@ -1,4 +1,4 @@
-The dataset used in this paper can be downloaded via https://mb.uni-paderborn.de/kat/forschung/datacenter/bearing-datacenter.
+The dataset used in this paper can be downloaded via https://mb.uni-paderborn.de/en/kat/research/kat-datacenter/bearing-datacenter/data-sets-and-download.
 
 List of required files are below:
 
